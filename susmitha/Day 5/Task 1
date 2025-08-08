@@ -1,0 +1,30 @@
+const arr=[23,4,5,6,29,15,8,44]
+
+//for each
+arr.forEach((x)=>{console.log(x)})
+
+//filter 
+let filter_array=arr.filter((x)=>x%2==0)
+console.log(filter_array)
+
+//reduce
+
+let sum=arr.reduce((acc,val)=>acc+val)
+console.log(sum)
+ 
+//slice
+let slice_copy=arr.slice(2,5+1)
+console.log(slice_copy)
+
+//splice->remove
+arr.splice(3,5 )
+console.log(arr)
+
+let original = [1, 2, 3];
+let cloned = [...original];
+console.log("Cloned Array:", cloned);
+
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let merged = [...arr1, ...arr2];
+console.log("Merged Arrays:", merged);
